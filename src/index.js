@@ -49,6 +49,8 @@ submitBtn.addEventListener("click", () => {
       temp.innerHTML = `Temperature: ${conversion(tempValue)} °C`;
       humidity.innerHTML = `Humidity: ${humidityValue} %`;
       wind.innerHTML = `Wind Speed: ${windValue} km/hr`;
+      document.body.style.backgroundImage =
+        "url('https://source.unsplash.com/1600x900/?" + nameValue + "')";
       outputBox.style.display = "block";
       error.style.display = "none";
     });
